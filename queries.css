@@ -678,7 +678,7 @@ nav {
 
 nav ul {
  text-align: left;
- justify-content: flex-startz;
+ justify-content: flex-start;
  position: relative;
  bottom: 30px;
 }
@@ -717,8 +717,7 @@ nav ul {
 
 .ski-h1 {
     margin-top: 300px;
-  
-  }
+}
 
 .h1 {
  position: relative;
