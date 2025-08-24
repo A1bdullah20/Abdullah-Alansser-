@@ -1,3 +1,4 @@
+
 body {
     background-color: #1E1E1E;
     margin: 0;
@@ -382,8 +383,388 @@ background-color: #EEEEEE;
   background-color: #8E1616;
 }
 
+body {
+    background-color: #1E1E1E;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+ 
+}
+html {
+
+   font-size: 82.5%;
+   /* 13px/ 16px = 82.5% */
+}
+/* Menu */ 
+nav {
+  position: fixed; 
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+  background-color: #1E1E1E;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+nav li{
+    display: inline-block;
+    margin: 15px;
+    color: #EEEEEE;
+    font-weight: bold;
+    
+   
+}
+.nav-link {
+    color: white;
+  padding: 10px;
+  text-decoration: none; 
+   transition: 0.3s;
+}
+.nav-link.active {
+  color: #D84040;
+    text-decoration: underline;
+}
+a {
+ text-decoration: none;
+}
+nav li a:hover {
+   color: #D84040;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+nav li a:after {
+color: white;
+  padding: 10px;
+  text-decoration: none; 
+
+}
+/* iphone Menu  */ 
+.sidebar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 100vh;
+ width: 250px;
+ z-index: 999;
+ background-color: #1d16165a;
+ backdrop-filter: blur(10px);
+ display: none;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: flex-start;
+}
+
+#menu-btn {
+ display: none;
+}
+
+/* home page */
+
+header {
+    min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin-top: 80px;
+  margin-bottom: 110px;
+}
+
+.titel {
+    color: #EEEEEE;
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+
+.imghoome {
+  width: 200px;
+  height: 200px;
+  border-radius: 40px; 
+  object-fit: cover;   
+  margin-bottom: 10px;
+ }
+
+ #photo {   
+    border: 5px solid #EEEEEE;
+
+ }
+
+
+ a {
+  
+    font-size: 16px;
+    margin-left: 20px;
+    color: #EEEEEE;
+ }
+
+
+ a::after {
+    color: #EEEEEE;
+
+ }
+
+ a:active {
+   color: #EEEEEE;
+
+ }
+
+ a:hover {
+
+   color: #D84040;
+
+ }
+
+ a.btn:hover {
+   background-color: #D84040;
+   border: solid #D84040 3px;
+   color: #EEEEEE;
+
+ }
+ 
+ .Media {
+     margin-top: 30px;
 
 
 
+ }
+
+ .btn {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid #EEEEEE 3px;   
+  color: #EEEEEE;                
+  padding: 15px 20px;                          
+  border-radius: 30px;          
+  cursor: pointer;            
+  transition: 0.3s;   
+  margin: 10px;    
+ }
+ 
+
+/* other sectiones */ 
+
+/* About me  */
+
+.h1 {
+    color: #EEEEEE;
+    text-align: center;
+    font-size: 50px;
+   }
+
+.ski-h1 {
+    color: #EEEEEE;
+    text-align: center;
+    font-size: 50px;
+   }
+
+.imghoome2 {
+  width: 250px;
+  height: 250px;
+  border-radius: 40px; 
+  object-fit: cover;   
+  position: relative;
+  z-index: 0;
+  top: 10px;
+  
+ }
+
+
+.backg {
+  background-color: #868282 ;
+  padding: 8px 12px; 
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 125px;     
+  height: 21px;
+  position: relative;
+  z-index: 1;
+} 
+
+#S:hover {
+color: #D84040;
+
+}
+
+ .whatsapp {
+   margin-left: 10px;
+
+ }
+.Aboutme-sec {
+  height: 600px;
+}
+ .About-me {
+background-color: #EEEEEE;
+ width: 900px;
+ border-radius: 30px;
+ padding: 20px;
+ position: relative;
+ left: 400px;
+ bottom: 280px;
+}
+
+
+.About-me h2 {
+  position: relative;
+  top: 10px;
+  left: 22px;
+  color: #1D1616;
+  margin-bottom: 15px;
+  
+}
+  
+.About-me p {
+  position: relative;
+  left: 22px;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #1D1616;
+}
+
+/* services */
+#ser {
+  margin-top: 200px;
+}
+.Myservices {
+   height: 600px;
+   position: relative;
+   top: -100px;
+   background-color: #8E1616;
+}
+
+.Myservices h1 {
+  color: #EEEEEE; font-size: 50px; 
+  position: relative;
+   top: 40px;
+}
+
+
+ .info-grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 30px;
+}
+
+.info-box2 {
+  background-color: #EEEEEE;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  top: 50px;
+  
+}
+
+.info-box2 h3 {
+  margin: 10px 0;
+  position: relative;
+  bottom: 10px;
+  top: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: #1E1E1E;
+}
+
+.info-box2 p {
+  margin: 5px 0 0;
+  position: relative;
+  bottom: 10px;
+  top: 10px;
+  color: #1E1E1E;
+  line-height: 1.5;
+}
+
+/* Skills  */
+
+.Myskills h1 {
+  color: #EEEEEE; font-size: 50px; 
+  position: relative;
+   top: 30px;
+}
+
+.skills-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background-color: #EEEEEE;
+  padding: 20px;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 0 10px #1E1E1E;
+}
+
+.skill-card h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #1E1E1E;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill span {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #1E1E1E;
+  font-weight: bold;
+}
+
+.bar {
+  background-color: #999595;
+  border-radius: 5px;
+  height: 8px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.bar div {
+  background-color: #8E1616;
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  transition: width 1s ease-in-out;
+}
+/* Footer */
+.footer {
+  height: 50px;
+  text-align: center;
+   font-size: 20px;
+   font-weight: bold;
+   color: #EEEE;
+}
+
+.footer span {
+  text-transform: uppercase;
+}
+
+.other-sec {
+  background-color: #8E1616;
+}
 
 
