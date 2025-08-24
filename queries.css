@@ -678,14 +678,20 @@ nav {
 
 nav ul {
  text-align: left;
- justify-content: flex-start;
+ justify-content: left;
  position: relative;
  bottom: 30px;
+ left: 0px;
+ top: 10px;
 }
 
-#nav-link {
-  position: sticky;
+.sidebar {
+ height: 100%;
+ width: 100%;
 }
+#menu-btn {
+  display: block;  
+} 
 
 .About-me {
  background-color: #EEEEEE;
@@ -729,16 +735,4 @@ nav ul {
   display: none;
 }
 
-.sidebar {
- height: 100%;
- width: 100%;
 }
-#menu-btn {
-  display: block;
-  position: fixed;   
-    top: 20px;        
-    left: 20px;       /* مسافة من اليمين (غيرها left لو تبيه يسار) */
-    font-size: 26px;   /* حجم الأيقونة */
-    cursor: pointer;
-    z-index: 1100;     /* يخليه فوق كل شيء */
-} }

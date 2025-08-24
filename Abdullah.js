@@ -128,5 +128,7 @@ const sidebar = document.querySelector('.sidebar')
 
 }
 
+
+
  // Animate On Scroll Library
    AOS.init();
