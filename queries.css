@@ -735,4 +735,10 @@ nav ul {
 }
 #menu-btn {
   display: block;
+  position: fixed;   /* يثبت مكانه */
+    top: 20px;         /* مسافة من فوق */
+    right: 20px;       /* مسافة من اليمين (غيرها left لو تبيه يسار) */
+    font-size: 26px;   /* حجم الأيقونة */
+    cursor: pointer;
+    z-index: 1100;     /* يخليه فوق كل شيء */
 } }
